@@ -13,7 +13,7 @@ sha256sums=('SKIP')
 
 package() {
 	cd "$srcdir"
-	unzip -qqo ${source}
+	unzip -qqo ${pkgname}-master.zip
 
 	install -d $pkgdir/usr/share/
 	mv -vf $srcdir/${pkgname}-master/* $pkgdir/usr/share/
